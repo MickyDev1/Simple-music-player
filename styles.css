@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.playlist-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.music-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.music-card {
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.music-card:hover {
+  transform: translateY(-5px);
+  background-color: #ffe0c3;
+}
+
+.cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+p {
+  margin: 0.5rem 0;
+  color: #777;
+}
+
+audio {
+  margin-top: 1rem;
+  width: 100%;
+  outline: none;
+  background: #e0e0e0;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
